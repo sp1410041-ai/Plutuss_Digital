@@ -1,0 +1,687 @@
+/* =====================================
+   PLUTUSS DIGITAL
+   WEBSITE DEVELOPMENT SERVICE PAGE
+   IVORY + BRONZE THEME
+===================================== */
+
+.service-page {
+    --ivory: #F1EEE7;
+    --white: #FAF8F3;
+    --bronze: #A78355;
+    --bronze-dark: #876743;
+    --charcoal: #24231F;
+    --grey: #77736B;
+    --border: rgba(167, 131, 85, 0.22);
+    background: var(--ivory);
+    color: var(--charcoal);
+    overflow: hidden;
+}
+
+.service-page section {
+    position: relative;
+    padding: 110px 9%;
+}
+
+.web-eyebrow {
+    color: var(--bronze);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+
+/* HERO */
+
+.web-hero {
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: radial-gradient(circle at 80% 45%, rgba(167, 131, 85, 0.14), transparent 35%), var(--ivory);
+}
+
+.web-hero-content {
+    max-width: 680px;
+    z-index: 2;
+}
+
+.web-hero h1 {
+    font-size: clamp(46px, 6.5vw, 88px);
+    line-height: 1.08;
+    letter-spacing: -4px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.web-hero h1 span {
+    color: var(--bronze);
+}
+
+.web-hero-description {
+    color: var(--grey);
+    max-width: 520px;
+    line-height: 1.9;
+    font-size: 16px;
+    margin: 28px 0 35px;
+}
+
+.web-hero-button,
+.web-enquiry a {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 17px 27px;
+    background: var(--charcoal);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    transition: 0.35s ease;
+}
+
+.web-hero-button:hover,
+.web-enquiry a:hover {
+    background: var(--bronze);
+    transform: translateY(-3px);
+}
+
+
+/* HERO VISUAL */
+
+.web-hero-visual {
+    width: 390px;
+    height: 390px;
+    min-width: 300px;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.web-visual-orbit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(167, 131, 85, 0.4);
+    border-radius: 50%;
+    animation: orbitRotate 18s linear infinite;
+}
+
+.orbit-one {
+    transform: rotateX(65deg) rotateZ(20deg);
+}
+
+.orbit-two {
+    width: 78%;
+    height: 115%;
+    transform: rotateY(65deg) rotateZ(-25deg);
+    animation-direction: reverse;
+}
+
+.web-visual-core {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #C5A77E, #876743);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 25px 70px rgba(100, 72, 38, 0.22), inset 0 2px 15px rgba(255, 255, 255, 0.35);
+    animation: coreFloat 5s ease-in-out infinite;
+}
+
+.web-visual-core span {
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+.web-visual-core strong {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.web-visual-core small {
+    font-size: 8px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+@keyframes orbitRotate {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes coreFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* INTRO */
+
+.web-intro {
+    text-align: center;
+    background: var(--white);
+}
+
+.web-intro h2,
+.web-offerings h2,
+.web-clients h2,
+.web-tech h2,
+.web-faq h2,
+.web-enquiry h2 {
+    font-size: clamp(34px, 4.5vw, 55px);
+    line-height: 1.2;
+    letter-spacing: -1.8px;
+    font-weight: 600;
+    margin: 0 auto 25px;
+}
+
+.web-intro h2 {
+    max-width: 800px;
+}
+
+.web-intro h2 span {
+    color: var(--bronze);
+}
+
+.web-intro>div>p:last-child {
+    max-width: 700px;
+    margin: auto;
+    color: var(--grey);
+    line-height: 1.9;
+}
+
+
+/* OFFERINGS */
+
+.web-offerings {
+    background: var(--ivory);
+}
+
+.web-offerings>div:first-child {
+    text-align: center;
+}
+
+.web-offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 60px;
+}
+
+.web-offer-card {
+    min-height: 220px;
+    padding: 32px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    transition: 0.4s ease;
+}
+
+.web-offer-card:hover {
+    transform: translateY(-9px);
+    border-color: var(--bronze);
+    box-shadow: 0 20px 45px rgba(80, 60, 30, 0.09);
+}
+
+.web-offer-card span {
+    color: var(--bronze);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.web-offer-card h3 {
+    font-size: 21px;
+    margin: 30px 0 12px;
+}
+
+.web-offer-card p {
+    color: var(--grey);
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* CLIENTS */
+
+.web-clients {
+    text-align: center;
+    background: var(--charcoal);
+    color: var(--white);
+}
+
+.web-clients>div,
+.web-tech>div,
+.web-faq>div {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.web-clients p:last-child,
+.web-tech p:last-child {
+    color: var(--grey);
+    line-height: 1.9;
+}
+
+.web-clients p:last-child {
+    color: #C5C0B7;
+}
+
+
+/* TECHNOLOGIES */
+
+.web-tech {
+    background: var(--white);
+}
+
+
+/* FAQ */
+
+.web-faq {
+    background: var(--ivory);
+}
+
+
+/* ENQUIRY */
+
+.web-enquiry {
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(167, 131, 85, 0.2), transparent 60%), var(--charcoal);
+    color: var(--white);
+}
+
+.web-enquiry p:not(.web-eyebrow) {
+    color: #C5C0B7;
+    margin: 20px 0 35px;
+    line-height: 1.8;
+}
+
+.web-enquiry a {
+    background: var(--bronze);
+}
+
+.web-enquiry a:hover {
+    background: var(--white);
+    color: var(--charcoal);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .web-hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .web-hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .web-hero-visual {
+        width: 320px;
+        height: 320px;
+    }
+    .web-offerings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .service-page section {
+        padding: 80px 6%;
+    }
+    .web-hero {
+        min-height: auto;
+    }
+    .web-hero h1 {
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+    .web-hero-visual {
+        width: 270px;
+        height: 270px;
+        min-width: 270px;
+    }
+    .web-visual-core {
+        width: 155px;
+        height: 155px;
+    }
+    .web-visual-core strong {
+        font-size: 22px;
+    }
+    .web-offerings-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 35px;
+    }
+    .web-offer-card {
+        min-height: auto;
+    }
+    .web-intro h2,
+    .web-offerings h2,
+    .web-clients h2,
+    .web-tech h2,
+    .web-faq h2,
+    .web-enquiry h2 {
+        letter-spacing: -1px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .web-visual-orbit,
+    .web-visual-core {
+        animation: none;
+    }
+}
+
+
+/* CINEMATIC HERO TEXT */
+
+.web-hero h1 {
+    overflow: hidden;
+}
+
+.hero-line {
+    display: block;
+}
+
+.hero-bronze-line {
+    color: var(--bronze);
+}
+
+
+/* 3D SERVICE CARD ANIMATIONS */
+
+.web-offerings-grid {
+    perspective: 1200px;
+}
+
+.web-offer-card {
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.web-offer-card h3,
+.web-offer-card p,
+.web-offer-card span {
+    transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.web-offer-card:hover h3 {
+    transform: translateX(5px);
+}
+
+.web-offer-card:hover span {
+    letter-spacing: 4px;
+}
+
+
+/* =====================================
+   ANIMATED TECHNOLOGY SECTION
+===================================== */
+
+.web-tech {
+    overflow: hidden;
+}
+
+.web-tech h2 span {
+    color: var(--bronze);
+}
+
+.web-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+    perspective: 1000px;
+}
+
+.web-tech-card {
+    position: relative;
+    min-height: 175px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--ivory);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.web-tech-card::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -90px;
+    right: -70px;
+    border-radius: 50%;
+    background: rgba(167, 131, 85, 0.13);
+    filter: blur(25px);
+    transition: 0.5s ease;
+}
+
+.web-tech-card:hover {
+    border-color: var(--bronze);
+    box-shadow: 0 20px 45px rgba(80, 60, 30, 0.1);
+}
+
+.web-tech-card:hover::before {
+    transform: scale(2);
+}
+
+.web-tech-symbol {
+    position: relative;
+    z-index: 1;
+    color: var(--bronze);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.web-tech-card h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 19px;
+    margin: 25px 0 0;
+}
+
+.web-tech-index {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    color: rgba(167, 131, 85, 0.5);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+
+/* INFINITE TICKER */
+
+.web-tech-ticker {
+    width: 100vw;
+    margin-top: 100px;
+    margin-left: calc(50% - 50vw);
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 25px 0;
+    background: rgba(167, 131, 85, 0.045);
+}
+
+.web-ticker-track {
+    display: flex;
+    width: max-content;
+    animation: webTickerMove 28s linear infinite;
+}
+
+.web-ticker-group {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding-right: 45px;
+    white-space: nowrap;
+}
+
+.web-ticker-group span {
+    color: var(--bronze-dark);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.web-ticker-group span:nth-child(even) {
+    color: var(--bronze);
+    font-size: 18px;
+}
+
+@keyframes webTickerMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* TECHNOLOGY RESPONSIVENESS */
+
+@media (max-width: 900px) {
+    .web-tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .web-tech-grid {
+        gap: 12px;
+    }
+    .web-tech-card {
+        min-height: 145px;
+        padding: 20px;
+    }
+    .web-tech-card h3 {
+        font-size: 16px;
+    }
+    .web-tech-symbol {
+        font-size: 28px;
+    }
+    .web-tech-ticker {
+        margin-top: 65px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .web-ticker-track {
+        animation: none;
+    }
+}
+
+
+/* =====================================
+   ANIMATED FAQ ACCORDION
+===================================== */
+
+.web-faq {
+    background: var(--ivory);
+}
+
+.web-faq h2 span {
+    color: var(--bronze);
+}
+
+.web-faq-intro {
+    color: var(--grey);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.web-faq-list {
+    max-width: 900px;
+    margin: 65px auto 0;
+    border-top: 1px solid var(--border);
+}
+
+.web-faq-item {
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    transition: background 0.35s ease;
+}
+
+.web-faq-item.faq-active {
+    background: rgba(167, 131, 85, 0.045);
+}
+
+.web-faq-question {
+    width: 100%;
+    padding: 28px 15px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border: 0;
+    background: transparent;
+    color: var(--charcoal);
+    text-align: left;
+    cursor: pointer;
+}
+
+.web-faq-number {
+    color: var(--bronze);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.web-faq-title {
+    flex: 1;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.web-faq-icon {
+    color: var(--bronze);
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.web-faq-answer {
+    overflow: hidden;
+}
+
+.web-faq-answer p {
+    max-width: 720px;
+    margin: 0 55px 28px;
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.web-faq-question:hover .web-faq-title {
+    color: var(--bronze-dark);
+}
+
+@media (max-width: 600px) {
+    .web-faq-question {
+        gap: 14px;
+        padding: 23px 5px;
+    }
+    .web-faq-title {
+        font-size: 14px;
+    }
+    .web-faq-answer p {
+        margin: 0 35px 23px;
+        font-size: 13px;
+    }
+}

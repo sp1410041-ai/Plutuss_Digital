@@ -1,0 +1,36 @@
+:root {
+    font-family: 'DM Sans', sans-serif;
+    color: #24231F;
+    background: #F1EEE7;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    /* PLUTUSS DIGITAL - IVORY & BRONZE THEME */
+    --ivory: #F1EEE7;
+    --warm-white: #FAF8F3;
+    --bronze: #A78355;
+    --bronze-dark: #876743;
+    --charcoal: #24231F;
+    --soft-grey: #77736B;
+    --light-border: rgba(167, 131, 85, 0.22);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--ivory);
+    color: var(--charcoal);
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
